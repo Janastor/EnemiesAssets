@@ -23,7 +23,7 @@ public class EnemyControls : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _isGoingRight = (_random.Next(2) == 1);
-        StartCoroutine(ChangeDirectionTimer());
+        ChangeDirection();
     }
     
     private void Update()
