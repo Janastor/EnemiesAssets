@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Enemy : MonoBehaviour
 {
-    private GameObject _gameObject;
     
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
 }

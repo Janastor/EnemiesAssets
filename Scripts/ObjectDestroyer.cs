@@ -8,7 +8,7 @@ public class ObjectDestroyer : MonoBehaviour
     {
         if (collision.TryGetComponent<Enemy>(out Enemy enemy) == true)
         {
-            enemy.Die();
+            Destroy(enemy.gameObject);
         }
     }
 }
